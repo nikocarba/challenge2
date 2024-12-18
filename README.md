@@ -54,3 +54,16 @@ http://localhost:8888/?token=myjupytertoken
 
 ### Paso 5: Ejecutar el Notebook
 Dentro de Jupyter, abre el archivo notebook.ipynb. Para ejecutar las celdas, simplemente haz clic en "Run" o usa el atajo Shift + Enter para avanzar de celda en celda.
+
+
+
+
+## RESOLUCIONES
+
+### Punto 1
+Monto total de facturacion: 1696022.5
+### Punto 2
+El parquet se encuentra en la ruta data/output del repositorio
+### Punto 3
+![image](https://github.com/user-attachments/assets/43599078-d279-4dba-949e-485fc2b9e2dd)
+
