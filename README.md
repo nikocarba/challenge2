@@ -8,16 +8,20 @@ Este repositorio resuelve un challenge relacionado con el análisis de datos de 
 - Docker Compose
 
 ## Descripción del Proyecto
+Se proporciona un .yml con el docker compose que levanta una Jupyter Notebook con Spark y las instrucciones para utilizarlo.
 
 La Jupyter Notebook en este proyecto realiza las siguientes tareas:
 
+1. **Analisis exploratorio de datos**: 
+   La notebook realizar un EDA de los datasets para entender la data con la que se esta trabajando.
+   
 1. **Cálculo del Monto Total de Facturación**: 
    La notebook calcula el monto total de facturación utilizando el conjunto de datos proporcionado.
    
-2. **Generación de un Nuevo Dataset**:
+3. **Generación de un Nuevo Dataset**:
    Se crea un nuevo conjunto de datos con los 100 IDs que tienen el mayor monto de facturación.
    
-3. **Generación de un Histograma**:
+4. **Generación de un Histograma**:
    Se genera un histograma que muestra la cantidad de llamadas realizadas por hora.
 
 ## Instrucciones de Uso
@@ -40,14 +44,11 @@ Este proyecto utiliza Docker Compose para configurar un contenedor que ejecuta J
 
 Para iniciar el entorno, ejecuta el siguiente comando:
 ```bash
-docker-compose up
+docker-compose up -d
 ```
-
 
 ### Paso 4: Acceder a Jupyter Notebook
 Una vez que el contenedor esté corriendo, abre tu navegador y dirígete a:
-
-Para iniciar el entorno, ejecuta el siguiente comando:
 ```bash
 http://localhost:8888/?token=myjupytertoken
 ```
@@ -55,7 +56,11 @@ http://localhost:8888/?token=myjupytertoken
 ### Paso 5: Ejecutar el Notebook
 Dentro de Jupyter, abre el archivo notebook.ipynb. Para ejecutar las celdas, simplemente haz clic en "Run" o usa el atajo Shift + Enter para avanzar de celda en celda.
 
-
+### Paso 6: Terminar el enterno
+Para terminar el entorno, ejecuta el siguiente comando:
+```bash
+docker-compose down
+```
 
 
 ## RESOLUCIONES
